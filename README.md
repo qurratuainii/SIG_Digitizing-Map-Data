@@ -38,4 +38,58 @@
 
 18. Sebelum kita mendigitalkan jalan yang tersisa, penting untuk memperbaruui beberapa pengatran snap penting lainnya untuk membuat lapisan bebas kesalahan. Klik kanan pada ruang mana pun di area bilah alat dan aktifkan bilah Snapping toolbar (*Gambar 17*)
 
-19
+19. Sekarang Enable Snapping (Magnet Icon) akan muncul di panel. Klik untuk mengaktifkannya dan pilih All Layers dan pilih Open Snapping Options... (*Gambar 18*)
+
+20. Dalam dialog Snapping options, klik Snapping on Intersection, yang memungkinkan kita untuk menjepret perpotongan layer latar belakang (*Gambar 19*)
+
+21. Sekarang kita dapat mengklik tombol Add Feature dan mendigitalkan jalan lain di sekitar taman. Pastikan untuk mengklik Save Edits setelah menambahkan fitur baru untuk menyimpan pekerjaan kita. Alat yang berguna untuk membantu kita mendigitalkan adalah Vertex Tool. Klik tombol Vertex Tool dan pilih Vertex Tool (Current Layer) (*Gambar 20*)
+
+22. Setelah alat simpul diaktifkan, klik fitur apa pun untuk menampilkan simpul. Klik pada simpul mana pun untuk memilihnya. Verteks akan mengubah warna setelah dipilih. Sekarang kita dapat mengklik dan menyeret mouse kita untuk memindahkan simpul. Ini berguna saat kita ingin melakukan penyesuaian setelah fitur dibuat. Kita juga dapat menghapus simpul yang dipilih dengan mengklik tombol Hapus (*Gambar 21*)
+
+23. Setelah kita selesai mendigitalkan semua jalan, klik tombol Toogle Editing. Klik Save (*Gambar 22*)
+
+24. Sekarang kita akan membuat layer lain untuk mendigitalkan taman sebagai poligon. Klik Layer lalu Create Layer lalu New GeoPackage Layer... ikon dari Panel. Dalam dialog New GeoPackage Layer, klik tombol ... dan pilih database GeoPackage bernama digitizing.gpkg. Beri nama layer baru sebagai atribut yang disebut Taman. Pilih MultiPolygon sebagai Tipe. Peta topografi dasar adalah EPSG:2193 - NZGD 2000 CRS. Klik Oke. Di Bidang Baru Masukkan Nama, dan jenisnya sebagai data Teks, dengan 50 sebagai panjang maksimum dan klik :gulilabel:` Tambahkan ke daftar bidang.`. Klik OK (*Gambar 23*)
+
+25. Dialog pop-up akan muncul. Pilih tombol Add New Layer (*Gambar 24*)
+
+26. Sekarang pilih layer Parks lalu klik road Toogle Editing dan klik tombol Add feature dan klik pada kanvas peta untuk menambahkan simpul poligon. Digitalkan poligon yang mewakili taman. Pastikan menjepret simpul jalan sehingga tidak ada celah antara poligon taman dan garis jalan. KLik kanan untuk menyelesaikan poligon (*Gambar 25*)
+
+27. Masukkan nama taman di jendela pop-up Taman-Atribut Fitur (*Gambar 26*)
+
+28. Sekarang digitalkan bagian atas taman. Masukkan nama taman dan simpan perubahannya (*Gambar 27*)
+
+29. Selanjutnya, sebelum mendigitalkan poligon dalam, mari atur pengaturan yang dapat memudahkan pekerjaan. Lapisan Multi-Polygon menawarkan pengaturan berguna lainnya yang disebut Avoid intersections of new polygons. Pilih Enable Snapping, klik untuk mengaktifkannya, klik All Layers dan pilih Advanced Configuration (*Gambar 28*)
+
+30. Klik tombol Avoid Overlap on Active layers di bilah snapping toolbar (*Gambar 29*)
+
+31. Selanjutnya di edit konfigurasi lanjut, pilih Unit sebagai pixel (*Gambar 30*)
+
+32. Centang kotak di Avoid Overlap Column di baris untuk layer taman (*Gambar 31*)
+
+33. Klik Add Feature untuk menambahkan poligon. Dengan Avoid Overlap kita akan dapat dengan cepat mendigitalkan poligon baru tanpa khawatir akan menjepret secara tepat ke poligon tetangga (*Gambar 32*)
+
+34. Klik kanan untuk menyelesaikan poligon dan masukkan atributnya. Ajaibnya poliggon baru menyusut dan tersentak tepat ke batas poligon tetangga. Ini sangat berguna saat mendigitalkan batas kompleks di mana kita tidak perlu presisi dan masih memiliki poligon yang benar secara topologi. Klik Toggle Editing untuk menyelesaikan pengeditan layer Parks (*Gambar 33*)
+
+35. Selanjutnya untuk mendigitalkan layer bangunan. Buat layer poligon baru bernama Buildings dengan mengkklik ikon Layer Create Layer New GeoPackage Layer ... dari Panels. Atur bangunan dan MultiPolygon. pilih CRS sebagai EPSG:2193 - NZGD 2000. Klik OK (*Gambar 34*)
+
+36. Setelah lapisan bangunan ditambahkan, matikan lapisan Taman dan Jalan untuk membuat peta topo dasar terlihat. Pilih layer Buildings dan klik Toggle Editing (*Gambar 35*)
+
+37. Mendigitalkan bangunan bisa menjadi tugas yang rumit, dan juga menantang untuk menambahkan simpul secara manual sehingga ujung-ujungnya egak lurus dan membentuk persegi panjang. Kita akan menggunakan toolbar QGIS yang disebut Shape Digitizing untuk membantu tugas ini. Klik kanan pada ruang kosong mana pun di area toolbar dan aktifkan Shape Digitalizing Toolbar (*Gambar 36*)
+
+38. Aktifkan pengeditan dengan menekan ikon pensil Toggle Editing (*Gambar 37*)
+
+39. Sekarang klik Add Recatangle dropdown pilih Add rectangle from Extent tombol (*Gambar 38*)
+
+40. Zoom ke area dengan bangunan. Klik dan seret mouse untuk menggambar persegi panjang yang sempurna. Demikian pula, tambahkan bangunan yang tersisa (*Gambar 39*)
+
+41. Kita akan melihat bahwa beberapa bangunan tidak vertikal, dan kita perlu menggambar persegi panjang pada sudut yang sesuai dengan tapak bangunan. Di bawah Add Rectangle dropdown pilih Add Rectangle from center dan tombol point (*Gambar 40*)
+
+42. Zoom ke area bangunan berbentuk berlian. Klik di tengah untuk menjatuhkan titik dan seret mouse untuk menggambar persegi panjang
+
+43. Kita perlu memutas persegi panjang ini agar sesuai dengan gambar pada peta topo. alat putar tersedia di toolbar Advanced Digitizing. Klik kanan pada area kosong pada bagian toolbar dan aktifkan toolbar Advanced Digitizing (*Gambar 41*)
+
+44. Klik tombol Rotate Feature (*Gambar 42*)
+
+45. Gunakan alat fitur Select Single untuk memilih poligon yang ingin kita putar. Setelah alat Fitur Putar diaktifkan, kita akan melihat garis bidik di tengah poligon. Klik tepat pada garis bidik itu dan seret mouse sambil menahan tombol klik kiri. Pratinjau fitur yang diputar akan muncul. Lepaskan tombol mouse saat poligon sejajar dengan tapak bangunan (*Gambar 43*)
+
+46. Simpan hasil edit layer dan klik Toggle Editing setelah kita selesai mendigitalkan semua bangunan. Kita dapat menyeret lapisan untuk mengubah urutan tampilannya. Tugas digitalisasi sekarang selesai. Kita dapat bermain dengan opsi gaya dan pelabelan di properti lapisan untuk membuat peta yang terlihat bagus dari data yang kita buat (*Gambar 44*, *Gambar 45*)
